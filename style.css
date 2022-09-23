@@ -1,0 +1,64 @@
+/*********Divs gerais*******/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html,body{
+    height:100%;
+}
+.container{
+    width:100%;
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+/*O clear serve para limpar toda a flutuação causada pelo Float*/
+.clear{
+    clear:both;    
+}
+
+/**************************/
+
+header{
+    background-color: #D6D6D6;
+    /*Aqui é ajustado no Header o espaçamento das logos:*/
+    padding: 10px 7%;
+
+}
+
+.logo-1{
+    float: left;
+    width:100px;
+    height:70px;
+    background-image: url('./img/logo1.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* background-color: purple; */
+}
+
+.logo-2{
+    float: right;
+    width:100px;
+    height:70px;
+    background-image: url('./img/logo2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* background-color: purple; */
+}
+
+/*Trabalhando o responsivo com medias queries:*/
+/*Quando a tela atingir 510 pixels ativará os ajustes abaixo:*/
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+    .logo-1, .logo-2{
+        display: inline-block;
+        float: none;
+    }
+}
