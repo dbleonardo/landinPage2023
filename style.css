@@ -23,7 +23,7 @@ html,body{
 header{
     background-color: #D6D6D6;
     /*Aqui é ajustado no Header o espaçamento das logos:*/
-    padding: 10px 7%;
+    padding: 10px 7% 30px 7%;
 
 }
 
@@ -49,6 +49,76 @@ header{
     background-repeat: no-repeat;
     
     /* background-color: purple; */
+}
+
+/* form */
+
+section .cover-form{
+    width:100%;
+    padding: 0 2%;
+}
+
+.bg{
+    background-image: url(./img/bg-form.jpg);
+    height:550px;
+    background-size: cover;
+    background-position: center;
+}
+
+.form-container{
+    float:right;
+    margin-right: 40px;;
+    width: 400px;
+    height: 110%;
+    /* relative para poder usar o top para subir em 5% o form. */
+    position: relative;
+    top: -5%;
+    background-color: white;
+}
+
+.form-container h2{
+    font-weight: normal;
+    background-color: rgb(234, 236, 239);
+    padding:20px 15px;
+    color:black;
+    font-size: 18px;
+}
+
+.form-container form{
+    margin-top: 8px;
+    padding: 20px;
+}
+
+.form-container form p{
+    font-size: 13px;
+    color: #525252;
+}
+
+.form-container form input[type=text]{
+    width:100%;
+    border:1px solid #ccc;
+    height:45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-wrapper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wrapper:last-child{
+    margin-top:20px;
+}
+
+.form-container form input[type=submit]{
+    background-color: #033c50;
+    text-transform: uppercase;
+    color:white;
+    width:100%;
+    font-size: 25px;
+    height:50px;
+    cursor: pointer;
+    border: none;
 }
 
 /*Trabalhando o responsivo com medias queries:*/
