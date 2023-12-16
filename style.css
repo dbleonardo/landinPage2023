@@ -1,8 +1,12 @@
+/* fontes importadas do google */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
 /*********Divs gerais*******/
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 html,body{
     height:100%;
@@ -21,7 +25,7 @@ html,body{
 /**************************/
 
 header{
-    background-color: #D6D6D6;
+    background-color: rgb(180,180,180);
     /*Aqui é ajustado no Header o espaçamento das logos:*/
     padding: 10px 7% 30px 7%;
 
@@ -66,6 +70,7 @@ section .cover-form{
 }
 
 .form-container{
+    z-index: 2;
     float:right;
     margin-right: 40px;;
     width: 400px;
@@ -74,11 +79,12 @@ section .cover-form{
     position: relative;
     top: -5%;
     background-color: white;
+    box-shadow: 1px 2px 1px 1px rgb(180,180,180);
 }
 
 .form-container h2{
     font-weight: normal;
-    background-color: rgb(234, 236, 239);
+    background-color: rgb(210,210,210);
     padding:20px 15px;
     color:black;
     font-size: 18px;
@@ -87,6 +93,7 @@ section .cover-form{
 .form-container form{
     margin-top: 8px;
     padding: 20px;
+   
 }
 
 .form-container form p{
@@ -121,7 +128,88 @@ section .cover-form{
     border: none;
 }
 
+/* sessão chamada */
+
+section.chamada{
+    z-index: 1;
+    position: relative;
+    top: -55px;
+    width:100%;
+    text-align: center;
+    display:inline-block;
+    text-align: center;
+    
+}
+
+.container-chamada{
+    width:100%;
+    background-color: rgb(180,180,180);
+    padding:50px 0;
+    width:100%;
+    max-width: 1280px;
+    margin:0 auto;
+}
+
+section.chamada h2{ 
+    width: 96%;
+    display: inline-block;
+    max-width: 700px;
+    color:black;
+    font-size: 24px;
+    font-weight: normal; 
+}
+
+/* mosaico */
+
+.flex-mosaico{
+    display:flex;
+   
+    
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width:60%;
+}
+
+.item-2-mosaico{
+    width:40%;
+    padding:5% 3%;
+    background-color: #cfcece;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin-top:8px;
+}
+
+footer img{
+    width:120px;
+}
+
+/* responsivo */
 /*Trabalhando o responsivo com medias queries:*/
+/* tablets */
+
+@media screen and (max-width: 768px){
+    .flex-mosaico{
+        display: block;
+    }
+    .item-1-mosaico{
+        padding-top: 80%; /* colocando a altura nas fotos do mosaico */
+        width: 100%;
+    }
+    .item-2-mosaico{
+        width:100%;
+    }
+}
+
+/* celulares */
 /*Quando a tela atingir 510 pixels ativará os ajustes abaixo:*/
 @media screen and (max-width: 510px){
     header{
