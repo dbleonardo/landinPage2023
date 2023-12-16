@@ -10,6 +10,7 @@
 }
 html,body{
     height:100%;
+    background-color: #E7EDED;
 }
 .container{
     width:100%;
@@ -133,7 +134,7 @@ section .cover-form{
 section.chamada{
     z-index: 1;
     position: relative;
-    top: -55px;
+    /* top: -55px; */
     width:100%;
     text-align: center;
     display:inline-block;
@@ -182,6 +183,7 @@ section.chamada h2{
 footer{
     text-align: center;
     padding: 20px 0;
+    background-color: #cfcece;
 }
 
 footer p {
